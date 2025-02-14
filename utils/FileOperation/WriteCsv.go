@@ -10,7 +10,7 @@ import (
 )
 
 func WriteCsvFile(data []models.RelianceData) error {
-	file, err := os.Create("output.csv")
+	file, err := os.Create("output.xlsx")
 	if err != nil {
 		return fmt.Errorf("error writing csv%v", err)
 	}
